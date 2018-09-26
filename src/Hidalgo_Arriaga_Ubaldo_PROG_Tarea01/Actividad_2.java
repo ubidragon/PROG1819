@@ -23,29 +23,36 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 /**
+ * <p>
+ * Declarar dos variables de tipo <code>short</code> con valores 12 y 7.</p>
+ * <p>
+ * Realizar las operaciones con las variables, escribiendo el resultado de modo
+ * que aparezca como se muestra a continuación:</p>
+ * <div class="codigo elemento_centrado" style="width: 39em;">
+ * <div class="texto_izquierda">
+ * <pre><code>El valor de x es 12, y es 7<br>El resultado de x + y es 19<br>El resultado de x - y es 5<br>La división entera (x/y) da:1<br>El resto de la división entera (x%y) da:5<br></code></pre>
+ * </div>
+ * </div>
  *
  * @author Ubaldo Hidalgo Arriaga
  */
 public class Actividad_2 {
 
     /**
-     * <p>
-     * Declarar dos
-     * variables de tipo <code>short</code> con valores 12 y 7.</p>
-     * <p>Realizar las operaciones con las variables,
-     * escribiendo el resultado de modo que aparezca como se muestra a
-     * continuación:</p>
-     * <div class="codigo elemento_centrado" style="width: 39em;">
-     * <div class="texto_izquierda">
-     * <pre><code>El valor de x es 12, y es 7<br>El resultado de x + y es 19<br>El resultado de x - y es 5<br>La división entera (x/y) da:1<br>El resto de la división entera (x%y) da:5<br></code></pre>
-     * </div>
-     * </div>
+     *
      *
      * @param args
      */
     public static void main(String[] args) {
+        short x = 12;
+        short y = 7;
+
+        System.out.println("El valor de x es" + x + ", y es " + y);
+        System.out.println("El resultado de x + y es " + (short) (x + y));
+        System.out.println("El resultado de x - y es " + (short) (x - y));
+        System.out.println("La división entera (x/y) da: " + x / y);
+        System.out.println("El resto de la división entera (x%y) da: " + x % y);
 
     }
 }

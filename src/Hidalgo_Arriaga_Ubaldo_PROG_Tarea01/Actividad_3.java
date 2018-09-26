@@ -48,6 +48,21 @@ public class Actividad_3 {
      * @param args
      */
     public static void main(String[] args) {
-
+        int x=8;
+        StringBuilder res = new StringBuilder("El valor inicial es: ").append(x);
+        x+=2;
+        res.append("\nTras modificar el valor obtenemos: ").append(x);
+        x-=3;
+        res.append("\nTras modificar el valor obtenemos: ").append(x);
+        x*=3;
+        res.append("\nTras modificar el valor obtenemos: ").append(x);
+        x+=1;
+        res.append("\nTras modificar el valor obtenemos: ").append(x);
+        x/=2;
+        res.append("\nTras modificar el valor obtenemos: ").append(x);
+        x%=2;
+        res.append("\nTras modificar el valor obtenemos: ").append(x);
+        res.append("\nEL PROGRAMA HA FINALIZADO");
+        System.out.println(res);
     }
 }

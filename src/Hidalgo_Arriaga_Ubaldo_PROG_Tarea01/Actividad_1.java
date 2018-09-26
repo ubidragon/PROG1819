@@ -23,25 +23,32 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 /**
+ * crea ahora un pequeño programa que defina un enumerado con los sistemas
+ * <p>
+ * Al igual que en el apartado 11.4 de la unidad se definen unidades de medida
+ * de volumen, crea ahora un pequeño programa que defina un enumerado con los
+ * sistemas operativos: <strong>IOS</strong>, <strong>LINUX</strong>
+ * y <strong>WINDOWS</strong>, para posteriormente mostrar por pantalla cada va
  *
  * @author Ubaldo Hidalgo Arriaga
  */
 public class Actividad_1 {
 
+    public enum OperativeSystem {
+        IOS, LINUX, WINDOWS
+    }
+
     /**
-     * crea ahora un pequeño programa que defina un enumerado con los sistemas
-     * <p>
-     * Al igual que en el apartado 11.4 de la unidad se definen unidades de
-     * medida de volumen, crea ahora un pequeño programa que defina un enumerado
-     * con los sistemas operativos: <strong>IOS</strong>, <strong>LINUX</strong>
-     * y <strong>WINDOWS</strong>, para posteriormente mostrar por pantalla cada
-     * valor del enumerado declarado.</span></p>
+     * lor del enumerado declarado.</span></p>
      *
      * @param args
      */
     public static void main(String[] args) {
+
+        System.out.println(OperativeSystem.IOS);
+        System.out.println(OperativeSystem.LINUX);
+        System.out.println(OperativeSystem.WINDOWS);
 
     }
 }
