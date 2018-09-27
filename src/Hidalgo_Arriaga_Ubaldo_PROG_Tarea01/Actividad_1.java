@@ -29,7 +29,8 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
  * Al igual que en el apartado 11.4 de la unidad se definen unidades de medida
  * de volumen, crea ahora un pequeño programa que defina un enumerado con los
  * sistemas operativos: <strong>IOS</strong>, <strong>LINUX</strong>
- * y <strong>WINDOWS</strong>, para posteriormente mostrar por pantalla cada va
+ * y <strong>WINDOWS</strong>, para posteriormente mostrar por pantalla cada
+ * valor del enumerado declarado.</span></p>
  *
  * @author Ubaldo Hidalgo Arriaga
  */
@@ -40,7 +41,7 @@ public class Actividad_1 {
     }
 
     /**
-     * lor del enumerado declarado.</span></p>
+     *
      *
      * @param args
      */

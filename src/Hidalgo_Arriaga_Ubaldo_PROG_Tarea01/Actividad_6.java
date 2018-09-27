@@ -23,7 +23,6 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 /**
  *
  * @author Ubaldo Hidalgo Arriaga
@@ -49,6 +48,18 @@ public class Actividad_6 {
      * @param args
      */
     public static void main(String[] args) {
+        int num_minimo = -5;
+        int num_maximo = 4;
+        int nuevo = (int) (Math.random() * (num_minimo - num_maximo) + num_maximo);
+
+        StringBuilder res = new StringBuilder("numero minimo definido ==> ").append(num_minimo);
+        res.append("\nnumero maximo definido ==> ").append(num_maximo);
+        res.append("\nEl nuevo numero es: ").append(nuevo);
+        res.append("\n¿El numero esta entre -5 y 0? ==> ").append(nuevo >= num_minimo && nuevo < 0 && nuevo != 0);
+        res.append("\n¿El numero esta entre 0 y 2, ambos incluidos? ==> ").append(nuevo >= 0 && nuevo <= 2);
+        res.append("\n¿El numero esta entre 2 y 4, 2 no incluido.? ==> ").append(nuevo > 2 && nuevo <= 4 && nuevo != 2);
+
+        System.out.println(res);
 
     }
 }

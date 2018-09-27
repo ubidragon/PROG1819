@@ -23,28 +23,40 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 /**
+ *
+ * <p>
+ * Dada una variable entera <code>a</code> cuyo valor inicial es 2, y otra
+ * variable entera <code>b</code> cuyo valor inicial es 3, haz que se muestre la
+ * secuencia de resultados:<br>&nbsp; &nbsp;&nbsp; <code>false</code>,
+ * <code>true</code>, <code>false</code>, <code>true</code>,
+ * <code>false</code>&nbsp;&nbsp; (5 en total) usando un operador de relación
+ * diferente en cada caso, tal y como se ha visto en el apartado 13.3 de la
+ * unidad.</p>
+ * <p>
+ * &nbsp;</p>
+ *
  *
  * @author Ubaldo Hidalgo Arriaga
  */
 public class Actividad_4 {
 
     /**
-     * <p>
-     * Dada una variable entera <code>a</code> cuyo valor inicial es 2, y otra
-     * variable entera <code>b</code> cuyo valor inicial es 3, haz que se
-     * muestre la secuencia de resultados:<br>&nbsp; &nbsp;&nbsp;
-     * <code>false</code>, <code>true</code>, <code>false</code>,
-     * <code>true</code>, <code>false</code>&nbsp;&nbsp; (5 en total) usando un
-     * operador de relación diferente en cada caso, tal y como se ha visto en el
-     * apartado 13.3 de la unidad.</p>
-     * <p>
-     * &nbsp;</p>
+     *
      *
      * @param args
      */
     public static void main(String[] args) {
+        int a = 2;
+        int b = 3;
 
+        StringBuilder res = new StringBuilder("el resultado del ejercicio es: ");
+        res.append("\n").append(3 < 2)
+                .append(", ").append(3 > 2)
+                .append(", ").append(a == b)
+                .append(", ").append(a != b)
+                .append(", ").append(a >= b);
+
+        System.out.println(res);
     }
 }

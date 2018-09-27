@@ -47,12 +47,11 @@ public class Actividad_2 {
     public static void main(String[] args) {
         short x = 12;
         short y = 7;
-
-        System.out.println("El valor de x es" + x + ", y es " + y);
-        System.out.println("El resultado de x + y es " + (short) (x + y));
-        System.out.println("El resultado de x - y es " + (short) (x - y));
-        System.out.println("La división entera (x/y) da: " + x / y);
-        System.out.println("El resto de la división entera (x%y) da: " + x % y);
-
+        StringBuilder res = new StringBuilder("El valor de x es ").append(x).append(", y es ").append(y);
+        res.append("\nEl resultado de x + y es " + (short) (x + y));
+        res.append("\nEl resultado de x - y es " + (short) (x - y));
+        res.append("\nLa división entera (x/y) da: " + x / y);
+        res.append("\nEl resto de la división entera (x%y) da: " + x % y);
+        System.out.println(res);
     }
 }
