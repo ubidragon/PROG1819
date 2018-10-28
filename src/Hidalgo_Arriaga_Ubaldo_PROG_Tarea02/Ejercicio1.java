@@ -1,5 +1,3 @@
-package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
-
 /*
  * The MIT License
  *
@@ -23,35 +21,50 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea01;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+package Hidalgo_Arriaga_Ubaldo_PROG_Tarea02;
+
 /**
- * <p>
- * Declarar dos variables de tipo <code>short</code> con valores 12 y 7.</p>
- * <p>
- * Realizar las operaciones con las variables, escribiendo el resultado de modo
- * que aparezca como se muestra a continuación:</p>
- * <div class="codigo elemento_centrado" style="width: 39em;">
- * <div class="texto_izquierda">
- * <pre><code>El valor de x es 12, y es 7<br>El resultado de x + y es 19<br>El resultado de x - y es 5<br>La división entera (x/y) da:1<br>El resto de la división entera (x%y) da:5<br></code></pre>
- * </div>
- * </div>
  *
  * @author Ubaldo Hidalgo Arriaga
  */
-public class Actividad_2 {
+public class Ejercicio1 {
+    
 
-    /**
-     *
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        short x = 12;
-        short y = 7;
-        StringBuilder res = new StringBuilder("El valor de x es ").append(x).append(", y es ").append(y);
-        res.append("\nEl resultado de x + y es ").append((short) (x + y));
-        res.append("\nEl resultado de x - y es ").append((short) (x - y));
-        res.append("\nLa división entera (x/y) da: ").append(x / y);
-        res.append("\nEl resto de la división entera (x%y) da: ").append(x % y);
-        System.out.println(res);
+public static void main (String[] m)
+    {
+        int j=(int)Math.round(Math.random()*4+2); 
+        int i=0;        
+        int x=0;
+        String mensaje="Caso "+j+": Hola en ";
+        while (x<=j) {
+            i+=x;
+            x++;
+        }        
+        
+        switch(i)
+        {
+            case 3: 
+                mensaje+="Suajili se pronuncia 'jambo'.";
+                break;
+            case 6: 
+                mensaje+="Ruso se pronuncia 'pri-viet'.";
+                break;
+            case 10: 
+                mensaje+="Árabe se pronuncia \"As-salām 'alaykum\".";
+                break;             
+            case 15:
+                mensaje+="Chino se pronuncia 'ni hao'.";
+                break;                 
+            case 21:
+                mensaje+="Japonés se pronuncia 'ko-nin-chi-wá'.";
+                break; 
+            case 28:
+                mensaje+="Hebreo se pronuncia 'shalom'.";
+                break; 
+        }
+        
+        System.out.println(mensaje);
     }
+
+
 }
