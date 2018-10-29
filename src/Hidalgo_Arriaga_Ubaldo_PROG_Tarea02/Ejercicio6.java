@@ -25,6 +25,13 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea02;
 
 /**
  *
+ *
+ * En un concurso de televisión, donde hay un total de 25 participantes
+ * dispuestos en 5 columnas y 5 filas, se van eligiendo los participantes de 2
+ * en 2 para competir entre sí. <br>Para facilitar la tarea de la presentadora,
+ * te piden que hagas un programa que automatice la elección de los
+ * participantes
+ *
  * @author Ubaldo Hidalgo Arriaga
  */
 public class Ejercicio6 {
@@ -38,6 +45,10 @@ public class Ejercicio6 {
         posicionX1 = (int) (Math.random() * 5);
         posicionY1 = (int) (Math.random() * 5);
 
+        /*
+        Bucle para la generacion de la posicion del siguiente participante, 
+        dicho bucle se repite hasta que las coordenadas del participante sea difentes a las del primero
+         */
         do {
             posicionX2 = (int) (Math.random() * 5);
             posicionY2 = (int) (Math.random() * 5);
@@ -53,21 +64,22 @@ public class Ejercicio6 {
 
         message.append("\n  01234\n");
 
+        /*
+        Primer bucle que se encarga de pintar las filas
+         */
         for (int i = 0; i < 5; i++) {
 
             message.append(i).append(" ");
-            
-          
-                for (int j = 0; j < 5; j++) {
-                    if ((posicionY1==j && posicionX1 == i)  || (posicionY2==j && posicionX2 == i)) {
-                        message.append("*");
-                    } else {
-                        message.append("-");
-                    }
-                }
-        
+            /*
+            Segundo bucle que se encarga de pintar cada columna de cada fila y
+            filtra donde debe de colocar el * del participante
+             */
             for (int j = 0; j < 5; j++) {
-
+                if ((posicionY1 == j && posicionX1 == i) || (posicionY2 == j && posicionX2 == i)) {
+                    message.append("*");
+                } else {
+                    message.append("-");
+                }
             }
 
             message.append(" \n");

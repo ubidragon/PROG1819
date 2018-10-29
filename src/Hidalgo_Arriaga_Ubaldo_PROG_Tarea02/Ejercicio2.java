@@ -31,6 +31,7 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea02;
  */
 public class Ejercicio2 {
 
+    
     final static int CONSTANTE = 4;
 
     public static void main(String[] args) {

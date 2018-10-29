@@ -26,6 +26,11 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea02;
 
 /**
  *
+ * Generador de flechas a los laterales de asteriscos generados aleatoriamente.<br>
+ * Posibles patrones:<br>
+ * {@literal >>>>***<<<}<br>
+ * {@literal >>>>**<<<<}
+ * 
  * @author Ubaldo Hidalgo Arriaga
  */
 public class Ejercicio4 {
