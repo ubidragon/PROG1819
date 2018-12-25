@@ -1,10 +1,11 @@
 /*
  * Programa de pruebas de la clase Deposito.
  */
-package pruebadepositos;
+package Hidalgo_Arriaga_Ubaldo_PROG_Tarea05.pruebadepositos;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import pruebadepositos.Deposito;
 
 /**
  * Programa de prueba de la clase <code>Deposito</code>.

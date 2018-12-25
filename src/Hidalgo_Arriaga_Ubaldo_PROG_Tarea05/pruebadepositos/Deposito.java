@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pruebadepositos;
+package Hidalgo_Arriaga_Ubaldo_PROG_Tarea05.pruebadepositos;
 
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
