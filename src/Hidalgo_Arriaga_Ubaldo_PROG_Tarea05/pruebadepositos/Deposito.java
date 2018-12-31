@@ -8,7 +8,6 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea05.pruebadepositos;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
-
 /**
  *
  * Clase que representa un <strong>depósito</strong> de estructura
