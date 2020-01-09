@@ -5,7 +5,7 @@
  */
 package Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.ejercicios;
 
-import utilidades.ES;
+import Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.utilidades.ES;
 
 /**
  *

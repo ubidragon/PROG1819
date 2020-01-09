@@ -1,4 +1,4 @@
-package Hidalgo_Arriaga_Ubaldo_PROG_Tarea03.utilidades ;
+package Hidalgo_Arriaga_Ubaldo_PROG_Tarea07.utilidades;
 
 import java.util.Scanner;
 
@@ -14,6 +14,7 @@ import java.util.Scanner;
  * todos igual, pero que se diferencian en su lista de par�metros. 
  * 
  * @author Profesor
+ * @version 1.0.1
  */
 public class ES {
     
@@ -483,7 +484,7 @@ public class ES {
      * M�todo que permite establecer el color de texto mostrado por pantalla.
      * @param c Uno de los valores del enumerado ColorTexto.
      * @see ES.ColorTexto
-     * @see ES.resetearColores
+     * @see ES#resetearColores
      */
     public static void establecerColorTexto (ColorTexto c)
     {
@@ -494,7 +495,7 @@ public class ES {
      * M�todo que permite establecer el color de fondo para el texto mostrado por pantalla.
      * @param c Uno de los valores del enumerado ColorTexto.
      * @see ES.ColorTexto
-     * @see ES.resetearColores
+     * @see ES#resetearColores
      */
     public static void establecerColorFondo (ColorTexto c)
     {

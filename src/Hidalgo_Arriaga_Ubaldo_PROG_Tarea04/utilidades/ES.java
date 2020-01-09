@@ -1,17 +1,17 @@
-package utilidades ;
+package Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.utilidades;
 
 import java.util.Scanner;
 
 /**
- * Esta clase define algunos métodos para entrada de datos, de forma que se 
+ * Esta clase define algunos mï¿½todos para entrada de datos, de forma que se 
  * capturen los errores de entrada sin abortar, en caso de que el usuario 
- * introduzca datos no válidos.
- * También incluye un par de métodos para simplificar la escritura de mensajes
+ * introduzca datos no vï¿½lidos.
+ * Tambiï¿½n incluye un par de mï¿½todos para simplificar la escritura de mensajes
  * en pantalla, abreviando la escritura de las sentencias System.out.println()
- * y System.out.print(). Se hace uso también de la sobrecarga de métodos, 
- * que es algo que se había visto con los constructores, pero sin entrar en
- * detalle. Así, podemos tener tres métodos para leer enteros, que se llaman 
- * todos igual, pero que se diferencian en su lista de parámetros. 
+ * y System.out.print(). Se hace uso tambiï¿½n de la sobrecarga de mï¿½todos, 
+ * que es algo que se habï¿½a visto con los constructores, pero sin entrar en
+ * detalle. Asï¿½, podemos tener tres mï¿½todos para leer enteros, que se llaman 
+ * todos igual, pero que se diferencian en su lista de parï¿½metros. 
  * 
  * @author Profesor
  * @version 1.0.1
@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class ES {
     
     /**
-     * Códigos de color para ser usados a la hora de mostrar texto por pantalla
+     * Cï¿½digos de color para ser usados a la hora de mostrar texto por pantalla
      * o como colores de fondo.     
      */
     public enum ColorTexto {  
@@ -58,11 +58,11 @@ public class ES {
     }
     
     /**
-     * Este método sirve para leer desde teclado cualquier número entero en el
-     * rango de números del tipo int. La lectura se estará repitiendo hasta que
-     * el valor suministrado esté en ese rango.
+     * Este mï¿½todo sirve para leer desde teclado cualquier nï¿½mero entero en el
+     * rango de nï¿½meros del tipo int. La lectura se estarï¿½ repitiendo hasta que
+     * el valor suministrado estï¿½ en ese rango.
      *
-     * @return El número entero leído.
+     * @return El nï¿½mero entero leï¿½do.
      */
     public static int leeEntero() {
         boolean leido = false;
@@ -74,7 +74,7 @@ public class ES {
                 numero = teclado.nextInt();
                 leido = true;
             } catch (Exception e) {
-                ES.msgln("Error: No es un número entero válido. ");
+                ES.msgln("Error: No es un nï¿½mero entero vï¿½lido. ");
             }
 
         } while (!leido);
@@ -82,15 +82,15 @@ public class ES {
     }
 
     /**
-     * Este método sirve para escribir el mensaje indicado para solicitar la
-     * introducción de un dato desde teclado, y espera la introducción de
-     * cualquier número entero en el rango de números del tipo int, que será el
-     * dato leído. La lectura se estará repitiendo hasta que el valor
-     * suministrado esté en ese rango.
+     * Este mï¿½todo sirve para escribir el mensaje indicado para solicitar la
+     * introducciï¿½n de un dato desde teclado, y espera la introducciï¿½n de
+     * cualquier nï¿½mero entero en el rango de nï¿½meros del tipo int, que serï¿½ el
+     * dato leï¿½do. La lectura se estarï¿½ repitiendo hasta que el valor
+     * suministrado estï¿½ en ese rango.
      *
      * @param mensaje Es el mensaje que se muestra para solicitar la
-     * introducción del número.
-     * @return El número entero leído.
+     * introducciï¿½n del nï¿½mero.
+     * @return El nï¿½mero entero leï¿½do.
      */
     public static int leeEntero(String mensaje) {
         int numero = 0;
@@ -103,21 +103,21 @@ public class ES {
                 numero = teclado.nextInt();
                 leido = true;
             } catch (Exception e) {
-                ES.msgln("Error: No es un número entero válido. ");
+                ES.msgln("Error: No es un nï¿½mero entero vï¿½lido. ");
             }
         } while (!leido);
         return numero;
     }
 
     /**
-     * Este método sirve para leer desde teclado cualquier número entero en el
-     * rango de números del tipo int que además sea mayor o igual que el valor
-     * mínimo indicado como parámetro. La lectura se estará repitiendo hasta que
-     * el valor suministrado esté en ese rango.
+     * Este mï¿½todo sirve para leer desde teclado cualquier nï¿½mero entero en el
+     * rango de nï¿½meros del tipo int que ademï¿½s sea mayor o igual que el valor
+     * mï¿½nimo indicado como parï¿½metro. La lectura se estarï¿½ repitiendo hasta que
+     * el valor suministrado estï¿½ en ese rango.
      *
-     * @param minimo Es el valor más pequeño dentro del rango de los números
-     * enteros tipo int que se aceptará como válido.
-     * @return El número entero leído.
+     * @param minimo Es el valor mï¿½s pequeï¿½o dentro del rango de los nï¿½meros
+     * enteros tipo int que se aceptarï¿½ como vï¿½lido.
+     * @return El nï¿½mero entero leï¿½do.
      */
     public static int leeEntero(int minimo) {
         int numero = 0;
@@ -130,27 +130,27 @@ public class ES {
                 if (numero >= minimo) {
                     leido = true;
                 } else {
-                    ES.msgln("Error: Debe ser un número entero mayor o igual que " + minimo + ". ");
+                    ES.msgln("Error: Debe ser un nï¿½mero entero mayor o igual que " + minimo + ". ");
                 }
             } catch (Exception e) {
-                ES.msgln("Error: No es un número entero válido. ");
+                ES.msgln("Error: No es un nï¿½mero entero vï¿½lido. ");
             }
         } while (!leido);
         return numero;
     }
 
     /**
-     * Este método sirve para escribir el mensaje indicado para solicitar la
-     * introducción de un dato desde teclado, y espera la introducción de
-     * cualquier número entero en el rango de números del tipo int que además
-     * sea mayor o igual que el valor mínimo indicado como parámetro. La lectura
-     * se estará repitiendo hasta que el valor suministrado esté en ese rango.
+     * Este mï¿½todo sirve para escribir el mensaje indicado para solicitar la
+     * introducciï¿½n de un dato desde teclado, y espera la introducciï¿½n de
+     * cualquier nï¿½mero entero en el rango de nï¿½meros del tipo int que ademï¿½s
+     * sea mayor o igual que el valor mï¿½nimo indicado como parï¿½metro. La lectura
+     * se estarï¿½ repitiendo hasta que el valor suministrado estï¿½ en ese rango.
      *
      * @param mensaje  Es el mensaje que se muestra para solicitar la
-     * introducción del número.
-     * @param minimo  Es el valor más pequeño dentro del rango de los números
-     * enteros tipo int que se aceptará como válido.
-     * @return El número entero leído.
+     * introducciï¿½n del nï¿½mero.
+     * @param minimo  Es el valor mï¿½s pequeï¿½o dentro del rango de los nï¿½meros
+     * enteros tipo int que se aceptarï¿½ como vï¿½lido.
+     * @return El nï¿½mero entero leï¿½do.
      */
     public static int leeEntero(String mensaje, int minimo) {
         int numero = 0;
@@ -164,10 +164,10 @@ public class ES {
                 if (numero >= minimo) {
                     leido = true;
                 } else {
-                    ES.msgln("Error: Debe ser un número entero mayor o igual que " + minimo + ".");
+                    ES.msgln("Error: Debe ser un nï¿½mero entero mayor o igual que " + minimo + ".");
                 }
             } catch (Exception e) {
-                ES.msgln("Error: No es un número entero válido. ");
+                ES.msgln("Error: No es un nï¿½mero entero vï¿½lido. ");
             }
 
         } while (!leido);
@@ -175,26 +175,26 @@ public class ES {
     }
 
     /**
-     * Este método sirve para leer desde teclado cualquier número entero en el
-     * rango de números del tipo int que además sea mayor o igual que el valor
-     * mínimo indicado como primer parámetro y menor o igual que el valor m?ximo
-     * indicado como segundo parámetro. La lectura se estará repitiendo hasta
-     * que el valor suministrado esté en ese rango.
+     * Este mï¿½todo sirve para leer desde teclado cualquier nï¿½mero entero en el
+     * rango de nï¿½meros del tipo int que ademï¿½s sea mayor o igual que el valor
+     * mï¿½nimo indicado como primer parï¿½metro y menor o igual que el valor m?ximo
+     * indicado como segundo parï¿½metro. La lectura se estarï¿½ repitiendo hasta
+     * que el valor suministrado estï¿½ en ese rango.
      *
-     * @param minimo Es el valor más pequeño dentro del rango de los números
-     * enteros tipo int que se aceptará como válido.
-     * @param maximo Es el valor más alto dentro del rango de los números
-     * enteros tipo int que se aceptará como válido.
-     * @return El número entero leído.
-     * @throws IllegalArgumentException Lanza excepci?n si el parámetro mínimo
-     *   es mayor que el mínimo.
+     * @param minimo Es el valor mï¿½s pequeï¿½o dentro del rango de los nï¿½meros
+     * enteros tipo int que se aceptarï¿½ como vï¿½lido.
+     * @param maximo Es el valor mï¿½s alto dentro del rango de los nï¿½meros
+     * enteros tipo int que se aceptarï¿½ como vï¿½lido.
+     * @return El nï¿½mero entero leï¿½do.
+     * @throws IllegalArgumentException Lanza excepci?n si el parï¿½metro mï¿½nimo
+     *   es mayor que el mï¿½nimo.
      */
     public static int leeEntero(int minimo, int maximo) throws IllegalArgumentException {
         int numero = 0;
         boolean leido = false;
         Scanner teclado = null;
 
-        // Si el valor mínimo es mayor que el m?ximo, lanzamos una excepción
+        // Si el valor mï¿½nimo es mayor que el m?ximo, lanzamos una excepciï¿½n
         if (minimo <= maximo) {
             do {
                 try {
@@ -203,43 +203,43 @@ public class ES {
                     if (numero >= minimo && numero <= maximo) {
                         leido = true;
                     } else {
-                        ES.msgln("Error: Debe ser un número entero mayor o igual que " + minimo + " y menor o igual que " + maximo + ". ");
+                        ES.msgln("Error: Debe ser un nï¿½mero entero mayor o igual que " + minimo + " y menor o igual que " + maximo + ". ");
                     }
                 } catch (Exception e) {
-                    ES.msgln("Error: No es un número entero válido. ");
+                    ES.msgln("Error: No es un nï¿½mero entero vï¿½lido. ");
                 }
             } while (!leido);
         } else {
-            throw new IllegalArgumentException("Rango imposible. El valor mínimo no puede ser mayor que el valor m?ximo");
+            throw new IllegalArgumentException("Rango imposible. El valor mï¿½nimo no puede ser mayor que el valor m?ximo");
         }
         return numero;
     }
 
     /**
-     * Este método sirve para escribir el mensaje indicado para solicitar la
-     * introducción de un dato desde teclado, y espera la introducción de
-     * cualquier número entero en el rango de números del tipo int que además
-     * sea mayor o igual que el valor mínimo indicado como primer parámetro y
-     * menor o igual que el valor m?ximo indicado como segundo parámetro. La
-     * lectura se estará repitiendo hasta que el valor suministrado esté en ese
+     * Este mï¿½todo sirve para escribir el mensaje indicado para solicitar la
+     * introducciï¿½n de un dato desde teclado, y espera la introducciï¿½n de
+     * cualquier nï¿½mero entero en el rango de nï¿½meros del tipo int que ademï¿½s
+     * sea mayor o igual que el valor mï¿½nimo indicado como primer parï¿½metro y
+     * menor o igual que el valor m?ximo indicado como segundo parï¿½metro. La
+     * lectura se estarï¿½ repitiendo hasta que el valor suministrado estï¿½ en ese
      * rango.
      *
      * @param mensaje Es el mensaje que se muestra para solicitar la
-     * introducción del número.
-     * @param minimo Es el valor más pequeño dentro del rango de los números
-     * enteros tipo int que se aceptar? como válido.
-     * @param maximo Es el valor más alto dentro del rango de los números.
-     * enteros tipo int que se aceptará como válido.
-     * @return El número entero leído.
-     * @throws IllegalArgumentException Lanza excepci?n si el parámetro mínimo
-     *   es mayor que el mínimo.
+     * introducciï¿½n del nï¿½mero.
+     * @param minimo Es el valor mï¿½s pequeï¿½o dentro del rango de los nï¿½meros
+     * enteros tipo int que se aceptar? como vï¿½lido.
+     * @param maximo Es el valor mï¿½s alto dentro del rango de los nï¿½meros.
+     * enteros tipo int que se aceptarï¿½ como vï¿½lido.
+     * @return El nï¿½mero entero leï¿½do.
+     * @throws IllegalArgumentException Lanza excepci?n si el parï¿½metro mï¿½nimo
+     *   es mayor que el mï¿½nimo.
      */
     public static int leeEntero(String mensaje, int minimo, int maximo) throws IllegalArgumentException {
         int numero = 0;
         boolean leido = false;
         Scanner teclado = null;
 
-        // Si el valor mínimo es mayor que el m?ximo, lanzamos una excepción
+        // Si el valor mï¿½nimo es mayor que el m?ximo, lanzamos una excepciï¿½n
         if (minimo <= maximo) {
             do {
                 ES.msgln(mensaje);
@@ -249,24 +249,24 @@ public class ES {
                     if (numero >= minimo && numero <= maximo) {
                         leido = true;
                     } else {
-                        ES.msgln("Error: Debe ser un número entero mayor o igual que " + minimo + " y menor o igual que " + maximo + ". ");
+                        ES.msgln("Error: Debe ser un nï¿½mero entero mayor o igual que " + minimo + " y menor o igual que " + maximo + ". ");
                     }
                 } catch (Exception e) {
-                    ES.msgln("Error: No es un número entero válido. ");
+                    ES.msgln("Error: No es un nï¿½mero entero vï¿½lido. ");
                 }
             } while (!leido);
         } else {
-            throw new IllegalArgumentException("Rango imposible. El valor mínimo no puede ser mayor que el valor m?ximo");
+            throw new IllegalArgumentException("Rango imposible. El valor mï¿½nimo no puede ser mayor que el valor m?ximo");
         }
         return numero;
     }    
 
     /**
-     * Este método lee una cadena de caracteres desde teclado, y comprueba que
+     * Este mï¿½todo lee una cadena de caracteres desde teclado, y comprueba que
      * efectivamente la lectura se ha producido correctamente, mandando un
      * mensaje de error en caso de que haya fallado.
      *
-     * @return La cadena de caracteres leído desde el teclado.
+     * @return La cadena de caracteres leï¿½do desde el teclado.
      */
     public static String leeCadena() {
         Scanner teclado = new Scanner(System.in);
@@ -280,15 +280,15 @@ public class ES {
     }
 
     /**
-     * Este método sirve para escribir el mensaje indicado para solicitar la
-     * introducción de un dato desde teclado, espera la introducción de una
+     * Este mï¿½todo sirve para escribir el mensaje indicado para solicitar la
+     * introducciï¿½n de un dato desde teclado, espera la introducciï¿½n de una
      * cadena de caracteres desde teclado, y comprueba que efectivamente la
      * lectura se ha producido correctamente, mandando un mensaje de error en
      * caso de que haya fallado.
      *
-     * @param mensaje Es el mensaje que se env?a solicitando la introducción
+     * @param mensaje Es el mensaje que se env?a solicitando la introducciï¿½n
      * de la cadena de texto.
-     * @return La cadena de caracteres leído desde el teclado.
+     * @return La cadena de caracteres leï¿½do desde el teclado.
      */
     public static String leeCadena(String mensaje) {
         Scanner teclado = new Scanner(System.in);
@@ -303,8 +303,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.print(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.print(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.print() se use mucho.
      *
      * @param entero  Es es el valor entero de tipo int a imprimir como texto.
@@ -314,8 +314,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.print(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.print(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.print() se use mucho.
      *
      * @param enteroLargo Es es el valor entero de tipo long a imprimir como
@@ -326,8 +326,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.print(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.print(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.print() se use mucho.
      *
      * @param real  Es es el valor real de tipo float a imprimir como texto.
@@ -337,8 +337,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.print(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.print(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.print() se use mucho.
      *
      * @param realLargo Es es el valor entero de tipo double a imprimir como
@@ -349,21 +349,21 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.print(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.print(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.print() se use mucho.
      *
      * @param cadenaAImprimir Es la cadena de texto que hay que escribir en
-     * el dispositivo de salida estándar.
+     * el dispositivo de salida estï¿½ndar.
      */
     public static void msg(String cadenaAImprimir) {
         System.out.print(cadenaAImprimir);
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.println(),
-     * cuando se invoca sin parámetros, pero tiene la ventaja de que su
-     * escritura es más corta y ahorra algo de trabajo en programas donde la
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.println(),
+     * cuando se invoca sin parï¿½metros, pero tiene la ventaja de que su
+     * escritura es mï¿½s corta y ahorra algo de trabajo en programas donde la
      * sentencia System.out.println() se use mucho.
      */
     public static void msgln() {
@@ -371,8 +371,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.println(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.println(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.println() se use
      * mucho.
      *
@@ -383,8 +383,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.println(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.println(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.println() se use
      * mucho.
      *
@@ -396,8 +396,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.println(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.println(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.println() se use
      * mucho.
      *
@@ -408,8 +408,8 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.println(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.println(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.println() se use
      * mucho.
      *
@@ -421,21 +421,21 @@ public class ES {
     }
 
     /**
-     * Este método hace exactamente lo mismo que el método System.out.println(),
-     * pero tiene la ventaja de que su escritura es más corta y ahorra algo de
+     * Este mï¿½todo hace exactamente lo mismo que el mï¿½todo System.out.println(),
+     * pero tiene la ventaja de que su escritura es mï¿½s corta y ahorra algo de
      * trabajo en programas donde la sentencia System.out.println() se use
      * mucho.
      *
      * @param cadenaAImprimir Es la cadena de texto que hay que escribir en
-     * el dispositivo de salida estándar.
+     * el dispositivo de salida estï¿½ndar.
      */
     public static void msgln(String cadenaAImprimir) {
         System.out.println(cadenaAImprimir);
     }
 
     /**
-     * Lee desde teclado una respuesta para una pregunta de tipo Sí o No,
-     * mostrando por pantalla la pregunta en cuestión. Sólo se admiten como
+     * Lee desde teclado una respuesta para una pregunta de tipo Sï¿½ o No,
+     * mostrando por pantalla la pregunta en cuestiï¿½n. Sï¿½lo se admiten como
      * respuestas S, s, N o bien n.
      *
      * @param mensaje  Es el mensaje que se env?a con la pregunta cuya
@@ -455,7 +455,7 @@ public class ES {
                 if ( cadena!= null && cadena.length() == 1 && ((cadena.equalsIgnoreCase("S")) || (cadena.equalsIgnoreCase("N")))) {
                     correcta = true;
                 } else {
-                    ES.msgln("Error: Solo se admite como respuesta un único carácter, que debe ser 's', 'S', 'n' o 'N'.");
+                    ES.msgln("Error: Solo se admite como respuesta un ï¿½nico carï¿½cter, que debe ser 's', 'S', 'n' o 'N'.");
                 }
             } catch (Exception e) {
                 ES.msgln("Error: Ha fallado la entrada de datos.");
@@ -466,9 +466,9 @@ public class ES {
     
     
     /**
-     * Lee un carácter de teclado.
+     * Lee un carï¿½cter de teclado.
      * @param mensaje Mensaje a mostrar por pantalla
-     * @return El carácter leído por teclado.
+     * @return El carï¿½cter leï¿½do por teclado.
      */
     public static char leeCaracter(String mensaje) {
       
@@ -481,7 +481,7 @@ public class ES {
     }
     
     /**
-     * Método que permite establecer el color de texto mostrado por pantalla.
+     * Mï¿½todo que permite establecer el color de texto mostrado por pantalla.
      * @param c Uno de los valores del enumerado ColorTexto.
      * @see ES.ColorTexto
      * @see ES#resetearColores
@@ -492,7 +492,7 @@ public class ES {
     }
     
     /**
-     * Método que permite establecer el color de fondo para el texto mostrado por pantalla.
+     * Mï¿½todo que permite establecer el color de fondo para el texto mostrado por pantalla.
      * @param c Uno de los valores del enumerado ColorTexto.
      * @see ES.ColorTexto
      * @see ES#resetearColores
@@ -503,7 +503,7 @@ public class ES {
     }
     
     /**
-     * Método que permite reestablecer a los valores por defecto el color del 
+     * Mï¿½todo que permite reestablecer a los valores por defecto el color del 
      * texto y el color de fondo.     
      */
     public static void resetearColores ()

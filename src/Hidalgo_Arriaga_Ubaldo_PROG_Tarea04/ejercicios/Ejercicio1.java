@@ -5,7 +5,7 @@
  */
 package Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.ejercicios;
 
-import utilidades.ES;
+import Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.utilidades.ES;
 
 /**
  * Ejercicio que pretende generar un dibujo en base a una cadena de numeros.

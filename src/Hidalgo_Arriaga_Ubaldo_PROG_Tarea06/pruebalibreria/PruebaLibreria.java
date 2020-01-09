@@ -1,7 +1,7 @@
-package pruebalibreria;
+package Hidalgo_Arriaga_Ubaldo_PROG_Tarea06.pruebalibreria;
 
 import java.util.Arrays;
-import libreria.*;
+import Hidalgo_Arriaga_Ubaldo_PROG_Tarea06.libreria.*;
 
 /**
  * Clase de prueba de la biblioteca de clases libreria

@@ -7,7 +7,7 @@ package Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.ejercicios;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import utilidades.ES;
+import Hidalgo_Arriaga_Ubaldo_PROG_Tarea04.utilidades.ES;
 
 /**
  *
